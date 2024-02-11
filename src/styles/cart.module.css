@@ -1,0 +1,171 @@
+/* ========================== Cart.js ========================  */
+
+/* page's maincontainer */
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* div within the mainContainer */
+.mainContainer > div {
+  margin: 15px;
+  width: 100%;
+}
+
+/* cart page header containing cart details */
+.header {
+  height: 60px;
+  background-image: linear-gradient(135deg, #ffd700 10%, #d4af37 100%);
+
+  /* Blue background color */
+  box-shadow: 1px 1px 8px 1px #3498db; /* Matching box shadow */
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: black; /* Light text color */
+  border-radius: 5px;
+}
+
+/* styles for cart detail inside header */
+
+.cartDetail {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #e74c3c; /* Reddish color for variation */
+}
+
+/*  cartDetail container */
+.cartDetail {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* div inside cart detail */
+.cartDetail > div {
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  background-color: #ecf0f1; /* Light gray background color */
+  border-radius: 5px;
+  color: #2c3e50; /* Dark text color */
+}
+
+/*  button inside cart detail */
+.cartDetail button {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 100px;
+  height: 30px;
+  border: none;
+  color: white;
+  background-color: #27ae60; /* Green button color */
+}
+
+/* common styles for button inside the cart detail */
+.cartDetail button:hover {
+  background-color: #219653; /* Darker green on hover */
+}
+
+/* empty cart button */
+.removeAll {
+  background-color: #e74c3c; /* Red button color */
+}
+
+/* purchase button */
+.purchaseAll {
+  background-color: #f39c12; /* Orange button color */
+}
+
+/* style on hover over button */
+.removeAll:hover {
+  color: #e74c3c;
+  border: 2px solid #e74c3c;
+}
+
+/* style on hover over button */
+.purchaseAll:hover {
+  color: #f39c12;
+  border: 2px solid #f39c12;
+}
+
+/* ================================ CartItem.js ========================= */
+
+/* image container within the product card */
+.imageContainer {
+  height: 70%;
+}
+
+/* image inside the container */
+.imageContainer img {
+  height: 100%;
+  width: 100%;
+}
+
+/* product info */
+.itemInfo {
+  width: 100%;
+  height: 30%;
+}
+
+/* div inside product info */
+.itemInfo > div {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* name and price container */
+.namePrice {
+  height: 26%;
+  font-size: 1rem;
+  color: #2c3e50; /* Dark text color */
+}
+
+/* price and quantity container */
+.priceQuant {
+  height: 37%;
+  display: flex;
+  justify-content: space-between;
+  color: #e74c3c; /* Reddish color */
+}
+
+/* product quantity */
+.quantity {
+  color: #333; /* Dark text color */
+}
+
+/* reduce quantity */
+.minus {
+  color: #e74c3c;
+}
+
+/* increase quantity */
+.plus {
+  color: #27ae60; /* Green color for plus */
+}
+
+/* button container */
+.btnContainer {
+  height: 37%;
+}
+
+/* remove from cart button */
+.removeBtn {
+  width: 100%;
+  height: 100%;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #e74c3c; /* Red button color */
+}
+
+/* style on hover */
+.removeBtn:hover {
+  background-color: #c0392b; /* Darker red on hover */
+  border: 2px solid #c0392b;
+  color: #c0392b;
+  font-weight: 700;
+}
